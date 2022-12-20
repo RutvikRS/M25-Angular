@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./parent.component.css']
 })
 export class ParentComponent{
-  userName="Vrushali0701";
+  userName="RutvikRS45";
   constructor(){
   }
   //Second LifeCycleHook Method ie. ngOnInit
@@ -18,6 +18,6 @@ export class ParentComponent{
   //first it will call to constructor and then it will call to a function
   updateUser()
   {
-    this.userName="VrushaliVarankar";
+    this.userName="Rutvik Sakpal";
   }
 }
