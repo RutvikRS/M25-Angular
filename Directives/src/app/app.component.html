@@ -1,0 +1,38 @@
+<table border="1">
+  <thead>
+    <p><em>Student Details</em></p>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Gender</th>
+      <th>City</th>
+      <th>Fee</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!--NgFor Directive structural Directive-->
+    <tr *ngFor="let itr of students">
+      <td>{{itr.ID}}</td>
+      <!--custom pipe-->
+      <td>{{itr.Name}}</td>
+      <td>{{itr.Gender}}</td>
+      <td>{{itr.City}}</td>
+      <td>{{itr.Fee | currency: 'INR':true}}</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<div *ngIf="isValid">
+  <b>Hey Students, we have a webinar on 21st December</b>
+</div>
+<div *ngIf="!isValid">
+  <b>Hey Students, we don't have a webinar on 21st December</b>
+</div>
+<!--ngClass attribute directive-->
+<div [ngClass]="'one'">
+  Learning Angular Directives
+  <br>
+  <!--ngStyle attribute directive-->
+
+  <button [ngStyle]="{'color':'red','font-weight':'bold'}">Submit</button>
+</div>
