@@ -19,7 +19,7 @@ export class ChildComponent implements OnChanges{
 
     if(!changes['userName'].isFirstChange())
     {
-      if(changes['userName'].currentValue=='VrushaliVarankar')
+      if(changes['userName'].currentValue=='Rutvik Sakpal')
       {
         this.userName="Welcome "+this.userName;
       }
