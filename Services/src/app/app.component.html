@@ -1,0 +1,23 @@
+<table border="1">
+  <thead>
+    <p><em>Student Details</em></p>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Gender</th>
+      <th>City</th>
+      <th>Fee</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!--NgFor Directive structural Directive-->
+    <tr *ngFor="let itr of students">
+      <td>{{itr.ID}}</td>
+      <!--custom pipe-->
+      <td>{{itr.Name}}</td>
+      <td>{{itr.Gender}}</td>
+      <td>{{itr.City}}</td>
+      <td>{{itr.Fee | currency: 'INR':true}}</td>
+    </tr>
+  </tbody>
+</table>
